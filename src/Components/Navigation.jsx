@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { routes } from "../routes";
 ; // Import your routes
 
-export const NavMobile = () => {
+const NavMobile = () => {
   const [isOpen, setOpen] = useState(false);
   const ref = useRef(null);
 
@@ -60,3 +60,5 @@ export const NavMobile = () => {
     </div>
   );
 };
+
+export default NavMobile;

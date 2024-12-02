@@ -1,14 +1,16 @@
-import './Components/Navigation'
-import './blog.css'
+import NavMobile from './Components/Navigation';
+import './blog.css';
 
 
 
-function blog() {
+
+function Blog() {
 
 
   return (<>
-
+    <NavMobile />
+    <h1>This is my blog</h1>
   </>);
 }
 
-export default blog
+export default Blog;

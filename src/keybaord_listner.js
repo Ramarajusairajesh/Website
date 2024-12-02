@@ -1,6 +1,6 @@
 
 
-export function listener() {
+export default function listener() {
   const handleKeyPress = (e) => {
     console.log("Key pressed: ", e.key);
   };

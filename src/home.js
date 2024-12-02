@@ -2,11 +2,12 @@ import './home.css';
 import './Components/Navigation';
 import React, { useEffect } from 'react';
 import NavMobile from './Components/Navigation';
+import listener from './keybaord_listner'
+import info from './static/images/keyboard_black_bg.png';
 
+function Home() {
 
-function home() {
-
-  React.useEffect(() => {
+  useEffect(() => {
     const cleanupListener = listener();  // Initialize listener
 
     // Optionally clean up the listener on component unmount
@@ -39,4 +40,4 @@ function home() {
 
 
 }
-export default home;
+export default Home;
