@@ -1,6 +1,9 @@
 body {
-  background-color: black;
+  background-image: url('./static/images/1361510.jpeg');
+  height: 100vh;
+  width: 100vw;
 }
+
 
 .Intro {
   font-weight: bolder;
@@ -14,19 +17,6 @@ body {
   padding: 10px;
   max-width: 600px;
   margin: 0 auto;
-
-
-
-}
-
-.introduction {
-  padding: 0px 150px;
-  background: linear-gradient(90deg, red, orange, #d4d063, #4c43d1, #6712de);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  font-size: 25px;
-  font-weight: bold;
 }
 
 .hr {
@@ -35,7 +25,6 @@ body {
   opacity: 0;
   filter: blur(10px);
   animation: focusEffect 3s ease-in-out forwards;
-
 }
 
 @keyframes focusEffect {
@@ -47,6 +36,49 @@ body {
   100% {
     opacity: 1;
     filter: blur(0px);
-    /* End with no blur */
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  height: 400px;
+  background-color: rgb(247, 245, 245, 0.03);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+
+
+}
+
+.text {
+  opacity: 1;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideInFromBottom 2s forwards;
+  padding: 0px 20px;
+  position: relative;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
