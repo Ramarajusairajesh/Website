@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #e0f7fa;
   color: white;
   overflow-x: hidden;
   margin: 0;
@@ -44,5 +44,3 @@ img {
   justify-content: center;
   align-items: center;
 }
-
-.Welcome {}

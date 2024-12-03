@@ -1,3 +1,4 @@
+import App from './App';
 import './home.css';
 import './Components/Navigation';
 import React, { useEffect } from 'react';

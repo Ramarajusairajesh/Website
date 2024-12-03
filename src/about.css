@@ -1,0 +1,52 @@
+body {
+  background-color: black;
+}
+
+.Intro {
+  font-weight: bolder;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 2vh;
+  text-align: center;
+  padding: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+
+
+
+}
+
+.introduction {
+  padding: 0px 150px;
+  background: linear-gradient(90deg, red, orange, #d4d063, #4c43d1, #6712de);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.hr {
+  padding: 20px;
+  text-align: center;
+  opacity: 0;
+  filter: blur(10px);
+  animation: focusEffect 3s ease-in-out forwards;
+
+}
+
+@keyframes focusEffect {
+  0% {
+    opacity: 0;
+    filter: blur(5px);
+  }
+
+  100% {
+    opacity: 1;
+    filter: blur(0px);
+    /* End with no blur */
+  }
+}
